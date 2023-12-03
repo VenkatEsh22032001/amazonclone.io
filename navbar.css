@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+}
+#check{
+    display: none;
+}
+.lab{
+    position: fixed;
+    right: 0;
+    display: none;
+    margin-top: 40px;
+}
+
+@media(max-width:600px){
+    .lab{
+    display: block;
+}
+    
+    .parent .menuitems .ref{
+        position: fixed;
+        margin-top: 104px;
+        right:-1000px;  
+}
+    
+    
+#check:checked ~ .menuitems .ref{
+    display:flex;
+    flex-direction: column;
+   margin-top: 104px;
+   right: 0px;
+   background-color: lightseagreen;
+   border-radius: 10% 0% 0% 10%;
+  transition: 1s;
+}
+
+}
+nav img{
+    height: 100px;
+    width: 100px;
+}
+
+nav{
+    display: flex;
+    background-color: aqua;
+}
+.menuitems{
+    flex: 2;
+    background-color: aquamarine;
+}
+.logo{
+    flex: 3;
+    background-color: blueviolet;
+}
+nav .parent{
+    display: inline flex;
+}
+.menuitems .ref {
+    display:flex;
+    position: fixed;
+    right: 0;
+    padding: 40px;   
+}
+.menuitems .ref * {
+   padding: 5px;  
+}
